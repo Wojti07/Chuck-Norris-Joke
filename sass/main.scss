@@ -1,0 +1,76 @@
+@import "config";
+
+body {
+  background-color: $color2;
+}
+.logo {
+  background: linear-gradient(to right, $color3, $color4);
+  width: 60vw;
+  height: 300px;
+  margin: auto;
+  margin-bottom: 10px;
+  border-radius: 20px;
+  h1 {
+    float: left;
+    text-align: center;
+    font-size: 70px;
+    padding: 40px 80px;
+  }
+
+  img {
+    width: 300px;
+    height: 300px;
+    float: right;
+    padding: 0px 70px;
+  }
+}
+
+.grid-container {
+  display: grid;
+  width: 60vw;
+  height: 60vh;
+  margin: auto;
+  background: linear-gradient(to left, $color3, $color4);
+  border-radius: 20px;
+}
+.bt1 {
+  border: 5px dotted $color1;
+  background-clip: padding-box;
+  background-color: $color2;
+  position: absolute;
+  margin: 50px 500px;
+  width: 200px;
+  height: 100px;
+  border-radius: 20px;
+}
+
+button {
+  background-color: $color1;
+  border-radius: 20px;
+  font-size: 20px;
+  text-align: center;
+  margin: 25px;
+  padding: auto;
+  cursor: pointer;
+  &:hover {
+    color: #fff;
+    background-color: #404040;
+  }
+}
+.answer {
+  position: absolute;
+  border: 5px dotted $color1;
+  background-clip: padding-box;
+  margin: 200px 300px;
+  background-color: $color2;
+  width: 600px;
+  min-height: 300px;
+  max-height: 350px;
+  border-radius: 20px;
+}
+
+p {
+  font-size: 30px;
+  text-align: center;
+  padding: 30px 10px;
+}
