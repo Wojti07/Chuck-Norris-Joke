@@ -1,0 +1,1 @@
+"use strict";function generateJoke(){fetch("https://api.icndb.com/jokes/random").then(e=>e.json()).then(e=>{document.getElementById("joke").innerHTML=e.value.joke})}document.getElementById("generateJokeBtn").addEventListener("click",generateJoke);generateJoke();
